@@ -1,5 +1,6 @@
-# CV, yet another LaTeX CV
+# AltaCV, yet another LaTeX CV/Résumé class
 
+v1.7 (9 Aug 2023), by LianTze Lim (liantze@gmail.com)
 
 * v1.7 (9 Aug 2023) changes:
   - `\itemmarker` and `\ratingmarker` renamed to `\cvItemMarker` and `\cvRatingMarker`
