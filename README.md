@@ -25,7 +25,7 @@ Needs `pdflatex`, or Docker (`danteev/texlive` via `docker compose`).
 
 | What | Where |
 |------|--------|
-| Job history | `resumes/shared/jobs-altacv.tex` / `jobs-ats.tex` |
+| Job history (per role) | `resumes/<role>/jobs-altacv.tex` / `jobs-ats.tex` |
 | Title, summary, skills | `resumes/<role>/sidebar-altacv.tex` / `header-ats.tex` |
 | Photo | `photo.jpg` |
 
@@ -33,12 +33,11 @@ Needs `pdflatex`, or Docker (`danteev/texlive` via `docker compose`).
 
 ```text
 resumes/
-  shared/          # shared jobs + preambles
-  fullstack/       # altacv.tex, ats.tex, sidebar, header
-  data-analyst/
-  devops/
-  backend/
-  engineering-lead/
+  shared/                 # preambles, education, languages
+  <role>/
+    altacv.tex ats.tex
+    jobs-altacv.tex jobs-ats.tex   # role-specific experience
+    sidebar-altacv.tex header-ats.tex
 altacv.cls
 photo.jpg
 Makefile
