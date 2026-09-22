@@ -1,0 +1,44 @@
+# Extra exclusions for graphify (merged after .gitignore; gitignore syntax).
+# Prefer excluding binaries, caches, and noisy generated trees from the graph.
+
+# Graphify own output / caches
+graphify-out/
+graphify-out/**
+
+# Built & binary assets
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.ico
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.otf
+
+# LaTeX build junk (also in .gitignore; listed for --no-gitignore runs)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+pdfa.xmpi
+
+# Lock / vendor noise
+skills-lock.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Nested skill copies / docs that bloat the code graph
+latex-document-skill/
+**/node_modules/
+**/__pycache__/

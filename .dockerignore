@@ -1,0 +1,61 @@
+# Docker build context for Dockerfile (code-server + LaTeX Workshop).
+# Project files are mounted at runtime via docker-compose volumes, so the
+# image build does not need the CV sources.
+
+.git
+.gitignore
+.gitattributes
+
+# Ignore files / local agent config
+.graphifyignore
+.dockerignore
+.agents
+.claude
+.cursor
+.vscode
+.idea
+
+# Graphify output (large, regenerated)
+graphify-out
+
+# LaTeX auxiliaries & build products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.run.xml
+*.toc
+*.lof
+*.lot
+*.pdf
+pdfa.xmpi
+missfont.log
+
+# Photos / media not needed for image build
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+
+# Resume tree & sources (bind-mounted at runtime)
+resumes
+*.tex
+*.bib
+*.cls
+*.sty
+*.cfg
+Makefile
+README.md
+skills-lock.json
+latex-document-skill
+
+# Env / secrets
+.env
+.env.*
+**/.env

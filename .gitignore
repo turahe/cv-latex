@@ -1,0 +1,70 @@
+# --- LaTeX build artifacts ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.xdv
+*.dvi
+*.ps
+missfont.log
+
+# Glossaries / minted / etc.
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.xdy
+_minted*/
+
+# PDF/A sidecar from pdfx (regenerated on build)
+pdfa.xmpi
+
+# Built PDFs (rebuild with `make` / `make roles`)
+*.pdf
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Python / tooling ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# --- Graphify ---
+graphify-out/cache/
+
+# --- Local photo backups (keep photo.jpg tracked) ---
+photo-original.jpg
+
+# --- Docker ---
+# (compose volumes; no local state to ignore beyond defaults)

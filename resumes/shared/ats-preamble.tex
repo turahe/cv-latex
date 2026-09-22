@@ -1,0 +1,22 @@
+% Shared ATS preamble (input after \documentclass)
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\titleformat{\section}
+  {\normalsize\bfseries\uppercase}
+  {\thesection}{0pt}{}[{\vspace{1pt}\titlerule[0.5pt]}]
+\newcommand{\role}[4]{%
+  {\bfseries #1}\hfill #3\\
+  \textit{#2\if\relax\detokenize{#4}\relax\else, #4\fi}\vspace{1pt}%
+}
