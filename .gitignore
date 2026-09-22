@@ -65,6 +65,7 @@ graphify-out/cache/
 
 # --- Local photo backups (keep photo.jpg tracked) ---
 photo-original.jpg
+photo-cv-professional.png
 
 # --- Docker ---
 # (compose volumes; no local state to ignore beyond defaults)
